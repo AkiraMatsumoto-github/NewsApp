@@ -1,11 +1,15 @@
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
+import React from "react";
+import { StyleSheet, Text, View, Image } from "react-native";
+import ListItem from "./components/ListItem";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Hello! world</Text>
-      <StatusBar style="auto" />
+      <ListItem
+        title="asdfghjkjhagfcjhsandcfhvgqawsedrftgyhujikytaqwsedrftgyhujesedrftgqawsedrftgyhujikokjuhyteaqwsedrftgyhujikojuhygtfrdeswaqwsedrftgyhujikoijuhygtfrdeswaqwsedrftgyhujikijuhygtfrdeswaqwsedrftgyhuji"
+        imageUrl="https://picsum.photos/id/10/200/200"
+        author="SampleNews"
+      />
     </View>
   );
 }
